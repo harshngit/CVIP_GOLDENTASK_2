@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;	
+	font-family: 'Poppins',sans-serif;
+}
+
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #C3E9FF;
+}
+
+.wrapper{
+	background: #43BAFF;
+	width: 450px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+}
+
+/* signup form Css code */
+
+.form{
+	padding: 25px 30px;
+}
+.form header{
+	color: #1E78D3;
+	font-size: 25px;
+	font-weight: 600;
+	border-bottom: 1px solid #1A5DA0;
+	padding-bottom: 10px;
+}
+.form form{
+	margin: 20px 0;
+}
+
+.form form .error_txt{
+	color: red;
+	background: pink;
+	padding: 8px 10px;
+	text-align: center;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	border: 1px solid #f5c6cb;
+	display: none;
+}
+.form form .name_details{
+	display: flex;
+}
+
+form .name_details .field:first-child{
+	margin-right: 10px;
+}
+
+form .name_details .field:last-child{
+	margin-left: 10px;
+}
+
+.form form .field{
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.form form .field input{
+	outline: none;
+}
+.form form .field i{
+	position: absolute;
+	right: 15px;
+	color: #ccc;
+	top: 70%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.form form .field i .active::before{
+	color: #333;
+	content: "\f070";
+}
+.form form .field i:hover{
+	color: #000;
+}
+.form form .field input:hover{
+	box-shadow: 0 4px 8px 0 rgba(34, 141, 249, 1.0), 0 6px 20px 0 rgba(255, 255, 255 ,1.0);
+}
+.form form .input input{
+	height: 40px;
+	width: 100%;
+	font-size: 16px;
+	padding: 0 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.form form .field label{
+	color: #fff;
+	margin-bottom: 3px;
+}
+
+.form form .image input{
+	font-size: 17px;
+	color: #fff;
+}
+
+.form form .btn input{
+	padding: 10px 10px;
+	text-align: center;
+	color: #fff;
+	background: #037CF7;
+	cursor: pointer;
+	border-radius: 15px;
+	border: none;
+	font-size: 1rem;
+	font-weight: 700;
+}
+.form form .btn input:hover{
+	color: #037CF7;
+	background: #fff;
+	padding: 15px 0px;
+	box-shadow: 0 4px 8px 0 rgba(34, 141, 249, 1.0), 0 6px 20px 0 rgba(255, 255, 255 ,1.0);
+}
+
+.form .link{
+	color: #fff;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.form .link .btn{
+	color: #037CF7;
+	background: #fff;
+	margin: 10px 10px;
+	padding:5px 20px;
+	border-radius: 50px;
+}
+.form .link .btn:hover{
+	color: #fff;
+	background: #037CF7;
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 1.0), 0 6px 20px 0 rgba(34, 141, 249, 1.0);
+}
+
+
+/* user page css  */
+
+.users{
+	padding: 25px 30px;
+}
+
+.users header,
+.users_list a{
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid #1A5DA0;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	color: #0050A1;
+}
+
+.wrapper img{
+	object-fit: cover;
+	border-radius: 50%;
+}
+.users header .content,
+.users_list a .content{
+	display: flex;
+
+}
+.users header .content img{
+	height: 50px;
+	width: 50px;
+}
+
+.users header .details,
+.users_list a .details{
+	margin-left: 15px;
+}
+.users header .details span,
+.users_list a .details span{
+	font-size: 18px;
+	font-weight: 500;
+}
+.users header .logout{
+	color: #037CF7;
+	background: #fff;
+	margin: 10px 10px;
+	padding:5px 20px;
+	border-radius: 50px;
+}
+.users header .logout:hover{
+	color: #fff;
+	background: #037CF7;
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 1.0), 0 6px 20px 0 rgba(34, 141, 249, 1.0);
+}
+.users .search{
+	margin: 20px 0;
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.users .search .text{
+	font-size: 18px;
+	color: #fff;
+}
+.users .search input{
+	position: absolute;
+	height: 42px;
+	width: calc(100% - 50px);
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	padding: 0 13px;
+	font-size: 16px;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+.users .search input.active{
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.users .search button{
+	color: #037CF7;
+	background: #fff;
+	padding: 10px 10px;
+	border-radius: 0 5px 5px 0;
+	outline: none;
+	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+	width: 47px;
+	height: 42px;
+	transition: all 0.2s ease;
+}
+
+.users .search button.active{
+	color: #fff;
+	background: #037CF7;
+}
+.users .search button.active i::before{
+	content: "\f00d";
+
+}
+.users .search button:hover{
+	box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 1.0), 0 6px 20px 0 rgba(34, 141, 249, 1.0);
+}
+
+
+.users_list {
+	max-height: 350px;
+	overflow-y: auto;
+}
+.users_list a{
+	padding-right: 10px;
+	page-break-after: 10px;
+	margin-bottom: 15px;
+	border-bottom-color: #3D9CFC;
+}
+.users_list a .content img{
+	height: 50px;
+	width: 50px;
+}
+.users_list a p{
+	color: #448CD5;
+}
+.users_list a .status_dot {
+	font-size: 12px;
+	color: #066CC1;
+}
+
+.users_list a:last-child{
+	border: none;
+	margin-bottom: 0px;
+}
+.users_list::-webkit-scrollbar{
+	width: 0px;
+}
+/* we will use this class name in php to show  offline status */
+.users_list a .status_dot .offlien{
+	color: #2A7BCD;
+}
+
+
+
+/* chat area css code */
+.chat-area header{
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+}
+.chat-area header .back-icon{
+  color: #066CC1;
+  font-size: 18px;
+}
+.chat-area header img{
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+}
+.chat-area header .details span,
+.chat-area header .details p{
+  font-size: 17px;
+  font-weight: 500;
+  color: #1E78D3;
+}
+.chat-box{
+  position: relative;
+  min-height: 500px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding: 10px 30px 20px 30px;
+  background: #7ED4FF;
+  box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+              inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+.chat-box .text{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  width: calc(100% - 50px);
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+.chat-box .chat{
+  margin: 15px 0;
+}
+.chat-box .chat p{
+  word-wrap: break-word;
+  padding: 8px 16px;
+  box-shadow: 0 0 32px rgb(0 0 0 / 8%),
+              0rem 16px 16px -16px rgb(0 0 0 / 10%);
+}
+.chat-box .outgoing{
+  display: flex;
+}
+.chat-box .outgoing .details{
+  margin-left: auto;
+  max-width: calc(100% - 130px);
+}
+.outgoing .details p{
+  background: #009BE9;
+  color: #fff;
+  border-radius: 18px 18px 0 18px;
+}
+.chat-box .incoming{
+  display: flex;
+  align-items: flex-end;
+}
+.chat-box .incoming img{
+  height: 35px;
+  width: 35px;
+}
+.chat-box .incoming .details{
+  margin-right: auto;
+  margin-left: 10px;
+  max-width: calc(100% - 130px);
+}
+.incoming .details p{
+  background: #fff;
+  color: #009BE9;
+  border-radius: 18px 18px 18px 0;
+}
+.chat-area .typing-area{
+	padding: 18px 30px;
+	display: flex;
+  	justify-content: space-between;
+}
+.typing-area input{
+  height: 45px;
+  width: calc(100% - 58px);
+  font-size: 16px;
+  padding: 0 13px;
+  border: 1px solid #fff;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+.typing-area button{
+  color: #fff;
+  width: 55px;
+  border: none;
+  outline: none;
+  background: #1E78D3;
+  font-size: 19px;
+  cursor: pointer;
+  opacity: 0.7;
+  pointer-events: none;
+  border-radius: 0 5px 5px 0;
+  transition: all 0.3s ease;
+}
+.typing-area button.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+.chat-box::-webkit-scrollbar{
+	width: 0px;
+}
+
+
+
+
+/* Responive media query */
+@media screen and (max-width: 450px) {
+  .form, .users{
+    padding: 20px;
+  }
+  .form header{
+    text-align: center;
+  }
+  .form form .name-details{
+    flex-direction: column;
+  }
+  .form .name-details .field:first-child{
+    margin-right: 0px;
+  }
+  .form .name-details .field:last-child{
+    margin-left: 0px;
+  }
+
+  .users header img{
+    height: 45px;
+    width: 45px;
+  }
+  .users header .logout{
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  :is(.users, .users-list) .content .details{
+    margin-left: 15px;
+  }
+
+  .users-list a{
+    padding-right: 10px;
+  }
+
+  .chat-area header{
+    padding: 15px 20px;
+  }
+  .chat-box{
+    min-height: 400px;
+    padding: 10px 15px 15px 20px;
+  }
+  .chat-box .chat p{
+    font-size: 15px;
+  }
+  .chat-box .outogoing .details{
+    max-width: 230px;
+  }
+  .chat-box .incoming .details{
+    max-width: 265px;
+  }
+  .incoming .details img{
+    height: 30px;
+    width: 30px;
+  }
+  .chat-area form{
+    padding: 20px;
+  }
+  .chat-area form input{
+    height: 40px;
+    width: calc(100% - 48px);
+  }
+  .chat-area form button{
+    width: 45px;
+  }
+}
